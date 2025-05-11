@@ -1,12 +1,63 @@
-# React + Vite
+# Sydeny
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sydeny is a web application that integrates with the TrackMaster API to fetch and display data. It features a React frontend built with Vite and a Node.js backend server that can run locally.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- TrackMaster API integration
+- React + Vite frontend
+- Local Node.js backend server
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js
+- Git
+
+## Installation
+
+Clone the repository and install dependencies:
+
+git clone https://github.com/surajjadon/Sydeny.git
+cd Sydeny
+npm install
+cd backend
+npm install
+
+## Running the App
+
+Start Backend:
+
+cd backend
+npm start
+
+Backend runs at: http://localhost:5000
+
+Start Frontend (new terminal):
+
+npm run dev
+
+Frontend runs at: http://localhost:3000
+
+## Build Frontend for Production
+
+npm run build
+
+Build output will be in the dist/ folder.
+
+## Project Structure
+
+Sydeny/
+├── backend/       - Node.js backend
+├── src/           - React source code
+├── public/        - Static files
+├── package.json
+├── vite.config.js
+└── README.md
+
+## API
+
+Uses the TrackMaster API. Add API keys or tokens via env or config files.
+
+## License
+
+MIT
